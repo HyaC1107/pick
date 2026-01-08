@@ -1,6 +1,9 @@
-import { Redirect } from 'expo-router';
+import { View, Text } from 'react-native';
 
-export default function Index() {
-  // 사이트 오자마자 바로 /login 주소로 던져버려요! ㅎㅎ
-  return <Redirect href="/login" />;
+export default function Home() {
+  return (
+    <View style={{ flex: 1, justifyContent: 'center', alignItems: 'center' }}>
+      <Text>새 집 이사 준비 완료! 🏠</Text>
+    </View>
+  );
 }
